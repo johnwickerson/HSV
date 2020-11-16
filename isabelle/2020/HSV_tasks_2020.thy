@@ -89,9 +89,4 @@ section \<open>Task 5: Extending with NAND gates.\<close>
 
 (* TODO: Complete this task. *)
 
-
-section \<open>Task 6: Showing that the transformation to NAND gates can increase delay.\<close>
-
-(* TODO: Complete this task. *)
-
 end
