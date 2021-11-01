@@ -123,26 +123,6 @@ method bubble_sort3(A:array<int>)
   }
 }
 
-// Task 6. Difficulty: *
-function method get_min(a:int, b:int) : int
-{
-  if a <= b then a else b
-}
-
-method sort3(a:int, b:int, c:int) returns (min:int, mid:int, max:int)
-ensures min in {a,b,c}
-ensures mid in {a,b,c}
-ensures max in {a,b,c}
-ensures a in {min, mid, max}
-ensures b in {min, mid, max}
-ensures c in {min, mid, max}
-ensures min <= mid <= max
-{
-  min := get_min(a, get_min(b,c));
-  max := -get_min(-a, get_min(-b,-c));
-  mid := a + b + c - max - min;
-}
-
 method print_array(A:array<int>) 
 {
   var i := 0;
