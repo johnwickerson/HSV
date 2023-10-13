@@ -1,6 +1,6 @@
 theory HSV_tasks_2022 imports Complex_Main begin
 
-section {* Task 1: Full adders *}
+section \<open> Task 1: Full adders \<close>
 
 fun fulladder :: "bool * bool * bool \<Rightarrow> bool * bool"
 where
@@ -11,12 +11,12 @@ where
    (cout, s))"
 
 
-section {* Task 2: Fifth powers *}
+section \<open> Task 2: Fifth powers \<close>
 
 theorem "(n::nat) ^ 5 mod 10 = n mod 10"
   oops
 
-section {* Task 3: Logic optimisation *}
+section \<open> Task 3: Logic optimisation \<close>
 
 (* Datatype for representing simple circuits. *)
 datatype "circuit" = 
@@ -71,7 +71,7 @@ fun area :: "circuit \<Rightarrow> nat" where
 | "area (OR c1 c2) = 1 + area c1 + area c2"
 | "area _ = 0"
 
-section {* Task 4: More logic optimisation *}
+section \<open> Task 4: More logic optimisation \<close>
 
 lemma (* test case *) 
   "opt_redundancy (AND (INPUT 1) (OR (INPUT 1) (INPUT 2))) 
