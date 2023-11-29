@@ -4,7 +4,7 @@ This is the homepage of the above-named module, which is offered to MSc and 4th-
 
 * The module is run by [Dr John Wickerson](https://johnwickerson.github.io/).
 
-* The Isabelle coursework and the Dafny coursework for 2023 are now available -- have a look in the Isabelle and Dafny directories in this repository.
+* The Isabelle, Dafny, and SymbiYosys coursework are all now available -- have a look in the `isabelle`, `dafny`, and `yosys` directories in this repository.
 
 * The SymbiYosys coursework will follow within the next couple of weeks.
 
@@ -33,3 +33,5 @@ This is the homepage of the above-named module, which is offered to MSc and 4th-
 - [Dafny 2023](dafny/2023/dafny_exercises_2023.pdf): integer square roots; analogue-to-digital conversion; stupidsort.
 
 - [Isabelle 2023](isabelle/2023/isabelle_exercises_2023.pdf): introducing and eliminating XOR gates; lists of clones; analogue-to-digital conversion; Fermat's Last Theorem.
+
+- [SymbiYosys 2023](yosys/2023/symbiyosys_exercises_2023.pdf): binary-to-BCD conversion; verifying a circular queue.
