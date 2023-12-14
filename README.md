@@ -10,7 +10,7 @@ This is the homepage of the above-named module, which is offered to MSc and 4th-
 
 * All coursework is to be done in pairs. In Microsoft Teams, I have created a spreadsheet that will help you to pair up.
 
-* All coursework is due at 23:59 on Friday 15 December (the last day of Autumn term), and can be submitted by email.
+* All coursework is due at 23:59 on Friday 15 December (the last day of Autumn term), and can be submitted ~~by email~~ **on Blackboard**.
 
 ## Summary of past coursework questions
 
