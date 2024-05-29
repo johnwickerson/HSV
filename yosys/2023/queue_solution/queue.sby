@@ -1,0 +1,13 @@
+[options]
+mode prove
+depth 20
+
+[engines]
+smtbmc
+
+[script]
+read -formal queue.sv
+prep -top queue
+
+[files]
+queue.sv

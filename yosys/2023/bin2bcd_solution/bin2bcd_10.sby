@@ -1,0 +1,13 @@
+[options]
+mode cover
+depth 1
+
+[engines]
+smtbmc
+
+[script]
+read -formal bin2bcd_10.v
+prep -top bin2bcd_10
+
+[files]
+bin2bcd_10.v
