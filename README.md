@@ -4,13 +4,9 @@ This is the homepage of the above-named module, which is offered to MSc and 4th-
 
 * The module is run by [Dr John Wickerson](https://johnwickerson.github.io/).
 
-* The Isabelle, Dafny, and SymbiYosys coursework are all now available -- have a look in the `isabelle`, `dafny`, and `yosys` directories in this repository.
+* All coursework is to be done in pairs. I will create a spreadsheet that will help you to pair up.
 
-* The SymbiYosys coursework will follow within the next couple of weeks.
-
-* All coursework is to be done in pairs. In Microsoft Teams, I have created a spreadsheet that will help you to pair up.
-
-* All coursework is due at 23:59 on Friday 15 December (the last day of Autumn term), and can be submitted ~~by email~~ **on Blackboard**.
+* All coursework is due at 23:59 on Friday 13 December 2024 (the last day of Autumn term).
 
 ## Summary of past coursework questions
 
