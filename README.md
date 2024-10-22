@@ -4,7 +4,7 @@ This is the homepage of the above-named module, which is offered to MSc and 4th-
 
 * The module is run by [Dr John Wickerson](https://johnwickerson.github.io/).
 
-* All coursework is to be done in pairs. I will create a spreadsheet that will help you to pair up.
+* All coursework is to be done in pairs. Please use [this spreadsheet](https://imperiallondon-my.sharepoint.com/:x:/g/personal/jpw48_ic_ac_uk/EYhkiQ7Q0klGgtWs04hW5cQBj_gjm6j_AlP22WX10hh0Hw?e=ELeDnQ) to support this. The spreadsheet contains two sheets. The first sheet contains students who have already paired up. The second sheet contains students who are still looking for a pair. Please enter yourself initially onto the second sheet, and then once you have found a pair, please move yourselves over to the first sheet.
 
 * All coursework is due at 23:59 on Friday 13 December 2024 (the last day of Autumn term).
 
