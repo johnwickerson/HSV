@@ -1,6 +1,9 @@
 // Dafny coursework 2024
 //
 // Authors: John Wickerson
+//
+// Changelog:
+// * 5-Nov: "Task 5" was mis-labelled as "Task 4" below; now fixed.
 
 type symbol = int
 type literal = (symbol,bool)
@@ -200,7 +203,7 @@ ensures sat==false ==> forall r:valuation :: r in mk_valuation_seq(symbol_seq(q)
 }
 
 ////////////////////////////////////////
-// TASK 4: Verifying a simple SAT solver
+// TASK 5: Verifying a simple SAT solver
 ////////////////////////////////////////
 
 // This function updates a clause under the valuation x:=b. 
