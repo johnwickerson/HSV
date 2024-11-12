@@ -103,24 +103,59 @@ section \<open>Rule induction (cf. worksheet Section 5.5)\<close>
 
 text \<open>A Fibonacci function that demonstrates complex recursion schemes\<close>
 
-fun f :: "nat \<Rightarrow> nat" where
-  "f (Suc (Suc n)) = f n + f (Suc n)"
-| "f (Suc 0) = 1"
-| "f 0 = 1"
+fun fib :: "nat \<Rightarrow> nat" where
+  "fib (Suc (Suc n)) = fib n + fib (Suc n)"
+| "fib (Suc 0) = 1"
+| "fib 0 = 1"
 
-thm f.induct (* rule induction theorem for f *)
-
-text \<open>We need to prove a stronger version of the theorem below
-  first, in order to make the inductive step work. Just like how 
-  it often goes with loop invariants in Dafny!\<close>
-lemma helper: "f n \<ge> n \<and> f n \<ge> 1"
-  by (rule f.induct[of "\<lambda>n. f n \<ge> n \<and> f n \<ge> 1"], auto)
+thm fib.induct (* rule induction theorem for fib *)
 
 text \<open>The nth Fibonacci number is greater than or equal to n\<close>
-theorem "f n \<ge> n" 
-  using helper by simp
+theorem "fib n \<ge> n" 
+  apply (induct rule: fib.induct[of "\<lambda>n. fib n \<ge> n"])
+    apply (metis One_nat_def add_mono_thms_linordered_semiring(1) 
+                 fib.simps le_zero_eq not_less_eq_eq plus_1_eq_Suc)
+   apply auto
+  done
 
-section \<open>Verifying our optimiser (cf. worksheet Section 5.6)\<close>
+section \<open>Proving termination (cf. worksheet Section 5.6)\<close>
+
+fun \<theta> :: "nat \<Rightarrow> nat" where
+"\<theta> n = (case n mod 4 of 
+                0   \<Rightarrow> n
+|           Suc 0   \<Rightarrow> n + 6
+|      Suc (Suc 0)  \<Rightarrow> n + 4
+| Suc (Suc (Suc 0)) \<Rightarrow> n + 2)"
+
+value "[\<theta> 5, \<theta> 6, \<theta> 7, \<theta> 8]"
+
+function g :: "nat \<Rightarrow> nat" where
+  "g n = (if n mod 4 = 0 then n else g (n + 1))"
+  by pat_completeness auto
+termination 
+proof (relation "measure \<theta>", simp, 
+    simp only: measure_def inv_image_def, clarify)
+  fix n::nat
+  assume "n mod 4 > 0"
+  moreover {
+    assume *: "n mod 4 = 1"
+    hence "Suc n mod 4 = 2" by presburger
+    with * have "\<theta> (n + 1) < \<theta> n" by auto
+  } 
+  moreover {
+    assume *: "n mod 4 = 2"
+    hence "Suc n mod 4 = 3" by presburger
+    with * have "\<theta> (n + 1) < \<theta> n" by auto
+  } 
+  moreover {
+    assume *: "n mod 4 = 3"
+    hence "Suc n mod 4 = 0" by presburger
+    with * have  "\<theta> (n + 1) < \<theta> n" by auto
+  }
+  ultimately show "\<theta> (n + 1) < \<theta> n" by linarith
+qed
+
+section \<open>Verifying our optimiser (cf. worksheet Section 5.7)\<close>
 
 text \<open>The following non-theorem is easily contradicted.\<close>
 
