@@ -112,20 +112,21 @@ thm fib.induct (* rule induction theorem for fib *)
 
 text \<open>The nth Fibonacci number is greater than or equal to n\<close>
 theorem "fib n \<ge> n" 
-  apply (induct rule: fib.induct[of "\<lambda>n. fib n \<ge> n"])
-    apply (metis One_nat_def add_mono_thms_linordered_semiring(1) 
-                 fib.simps le_zero_eq not_less_eq_eq plus_1_eq_Suc)
-   apply auto
-  done
+proof (induct rule: fib.induct[of "\<lambda>n. fib n \<ge> n"])
+  case (1 n)
+  thus ?case 
+    by (metis One_nat_def add_mono_thms_linordered_semiring(1) fib.simps(1) 
+              fib.simps(3) le_zero_eq not_less_eq_eq plus_1_eq_Suc)
+qed (auto)
 
 section \<open>Proving termination (cf. worksheet Section 5.6)\<close>
 
 fun \<theta> :: "nat \<Rightarrow> nat" where
-"\<theta> n = (case n mod 4 of 
-                0   \<Rightarrow> n
-|           Suc 0   \<Rightarrow> n + 6
-|      Suc (Suc 0)  \<Rightarrow> n + 4
-| Suc (Suc (Suc 0)) \<Rightarrow> n + 2)"
+  "\<theta> n = (case n mod 4 of 
+                    0   \<Rightarrow> n
+    |           Suc 0   \<Rightarrow> n + 6
+    |      Suc (Suc 0)  \<Rightarrow> n + 4
+    | Suc (Suc (Suc 0)) \<Rightarrow> n + 2)"
 
 value "[\<theta> 5, \<theta> 6, \<theta> 7, \<theta> 8]"
 
