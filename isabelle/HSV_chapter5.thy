@@ -122,39 +122,16 @@ qed (auto)
 section \<open>Proving termination (cf. worksheet Section 5.6)\<close>
 
 fun \<theta> :: "nat \<Rightarrow> nat" where
-  "\<theta> n = (case n mod 4 of 
-                    0   \<Rightarrow> n
-    |           Suc 0   \<Rightarrow> n + 6
-    |      Suc (Suc 0)  \<Rightarrow> n + 4
-    | Suc (Suc (Suc 0)) \<Rightarrow> n + 2)"
+  "\<theta> n = 3 - ((n + 3) mod 4)"
 
-value "[\<theta> 5, \<theta> 6, \<theta> 7, \<theta> 8]"
+value "[\<theta> 0, \<theta> 1, \<theta> 2, \<theta> 3, \<theta> 4, \<theta> 5, \<theta> 6, \<theta> 7, \<theta> 8]"
 
 function g :: "nat \<Rightarrow> nat" where
   "g n = (if n mod 4 = 0 then n else g (n + 1))"
   by pat_completeness auto
-termination 
-proof (relation "measure \<theta>", simp, 
-    simp only: measure_def inv_image_def, clarify)
-  fix n::nat
-  assume "n mod 4 > 0"
-  moreover {
-    assume *: "n mod 4 = 1"
-    hence "Suc n mod 4 = 2" by presburger
-    with * have "\<theta> (n + 1) < \<theta> n" by auto
-  } 
-  moreover {
-    assume *: "n mod 4 = 2"
-    hence "Suc n mod 4 = 3" by presburger
-    with * have "\<theta> (n + 1) < \<theta> n" by auto
-  } 
-  moreover {
-    assume *: "n mod 4 = 3"
-    hence "Suc n mod 4 = 0" by presburger
-    with * have  "\<theta> (n + 1) < \<theta> n" by auto
-  }
-  ultimately show "\<theta> (n + 1) < \<theta> n" by linarith
-qed
+termination by (relation "measure \<theta>") (auto, presburger)
+
+
 
 section \<open>Verifying our optimiser (cf. worksheet Section 5.7)\<close>
 
