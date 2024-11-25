@@ -10,9 +10,9 @@ This is the homepage of the above-named module, which is offered to MSc and 4th-
 
 * The Isabelle coursework for 2024 is [now available](isabelle/2024).
 
-* The Dafny coursework for 2024 is also [now available](dafny/2024), but please note that you may struggle with it because the corresponding lectures have not been delivered yet!
+* The Dafny coursework for 2024 is [now available](dafny/2024).
 
-* The SymbiYosys coursework for 2024 is not yet available.
+* The SymbiYosys coursework for 2024 is [now available](yosys/2024).
 
 ## Summary of past coursework questions
 

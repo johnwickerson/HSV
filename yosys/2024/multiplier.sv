@@ -45,5 +45,16 @@ module multiplier (
    // Output logic
    assign out = accumulator;
 
+
+`ifdef FORMAL
+
+   always @(posedge clk) begin
+
+     // write your properties here!
+
+   end
+
+`endif
+   
    
 endmodule
