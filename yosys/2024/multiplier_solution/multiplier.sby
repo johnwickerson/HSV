@@ -1,0 +1,13 @@
+[options]
+mode cover
+depth 15
+
+[engines]
+smtbmc --nopresat bitwuzla -- --noincr
+
+[script]
+read -formal multiplier.sv
+prep -top multiplier
+
+[files]
+multiplier.sv
