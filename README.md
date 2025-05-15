@@ -41,3 +41,9 @@ Click on the links below to access the coursework questions (with model answers)
 - [Isabelle 2023](isabelle/2023): introducing and eliminating XOR gates; lists of clones; analogue-to-digital conversion; Fermat's Last Theorem.
 
 - [SymbiYosys 2023](yosys/2023): binary-to-BCD conversion; verifying a circular queue.
+
+- [Dafny 2024](dafny/2024): verifying SAT solvers.
+
+- [Isabelle 2024](isabelle/2024): introducing and eliminating NAND gates; conversions between numbers and lists of digits; verifying SAT solvers.
+
+- [SymbiYosys 2024](yosys/2024): verifying a multiplier.
