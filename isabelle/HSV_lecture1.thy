@@ -1,5 +1,3 @@
-(* Live script from the lecture on 12 October 2023 *)
-
 theory HSV_lecture1 imports Complex_Main begin
 
 find_theorems "_ \<in> \<rat>" 
