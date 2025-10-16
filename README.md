@@ -6,15 +6,15 @@ This is the homepage of the above-named module, which is offered to MSc and 4th-
 
 * Worksheets are available for [Dafny](dafny), [Isabelle](isabelle), and [SymbiYosys](yosys).
 
-* All coursework is to be done in pairs. Please use [this spreadsheet](https://imperiallondon-my.sharepoint.com/:x:/g/personal/jpw48_ic_ac_uk/EYhkiQ7Q0klGgtWs04hW5cQBj_gjm6j_AlP22WX10hh0Hw?e=ELeDnQ) to support this. The spreadsheet contains two sheets. The first sheet contains students who have already paired up. The second sheet contains students who are still looking for a pair. Please enter yourself initially onto the second sheet, and then once you have found a pair, please move yourselves over to the first sheet.
+* All coursework is to be done in pairs. Please use [this spreadsheet from October 2025](https://imperiallondon.sharepoint.com/:x:/r/sites/elec70056-202510/Shared%20Documents/General/pairings.xlsx?d=we69152f13a3b464f9027c023502c868d&csf=1&web=1&e=opwcVl) to support this. The spreadsheet contains two sheets. The first sheet contains students who have already paired up. The second sheet contains students who are still looking for a pair. Please enter yourself initially onto the second sheet, and then once you have found a pair, please move yourselves over to the first sheet.
 
-* All coursework is due at 23:59 on Friday 13 December 2024 (the last day of Autumn term).
+* All coursework is due at 15:00 on Friday 12 December 2025 (the last day of Autumn term).
 
-* The Isabelle coursework for 2024 is [now available](isabelle/2024).
+* The Isabelle coursework for 2025 is not yet available, and is expected to be released around 23 October.
 
-* The Dafny coursework for 2024 is [now available](dafny/2024).
+* The Dafny coursework for 2025 is not yet available, and is expected to be released by early November.
 
-* The SymbiYosys coursework for 2024 is [now available](yosys/2024).
+* The SymbiYosys coursework for 2025 is not yet available.
 
 ## Summary of past coursework questions
 
