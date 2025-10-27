@@ -10,7 +10,7 @@ This is the homepage of the above-named module, which is offered to MSc and 4th-
 
 * All coursework is due at 15:00 on Friday 12 December 2025 (the last day of Autumn term).
 
-* The Isabelle coursework for 2025 is not yet available, and is expected to be released around 23 October.
+* The Isabelle coursework for 2025 is now available.
 
 * The Dafny coursework for 2025 is not yet available, and is expected to be released by early November.
 
@@ -22,7 +22,7 @@ Click on the links below to access the coursework questions (with model answers)
 
 - [Dafny 2019](dafny/2019): bubble sort; selection sort; insertion sort; shellsort; Johnsort.
 
-- [Isabelle 2019](isabelle/2019): irrationality of 2*sqrt(2); L-numbers; pyramidal numbers; opt-NOT is effective; opt-NOT is idempotent; opt-DM is sound; opt-DM and opt-NOT never increase area; opt-DM and opt-NOT never increase delay; constant folding; circuits with fan-out.
+- [Isabelle 2019](isabelle/2019): irrationality of 2*sqrt(2); L-numbers; pyramidal numbers; `opt-NOT` is effective; `opt-NOT` is idempotent; `opt-DM` is sound; `opt-DM` and `opt-NOT` never increase area; `opt-DM` and `opt-NOT` never increase delay; constant folding; circuits with fan-out.
 
 - [Dafny 2020](dafny/2020): zeroing an array; backwards selection sort; recursive selection sort; early-termination bubble sort; cocktail-shaker sort.
 
@@ -34,7 +34,7 @@ Click on the links below to access the coursework questions (with model answers)
 
 - [Dafny 2022](dafny/2022): counting squares in a grid; binary search; quicksort.
 
-- [Isabelle 2022](isabelle/2022): full adders; fifth powers; opt-ident is sound and never increases area; opt-redundancy is sound and never increases area.
+- [Isabelle 2022](isabelle/2022): full adders; fifth powers; `opt-ident` is sound and never increases area; `opt-redundancy` is sound and never increases area.
 
 - [Dafny 2023](dafny/2023): integer square roots; analogue-to-digital conversion; stupidsort.
 
@@ -47,3 +47,5 @@ Click on the links below to access the coursework questions (with model answers)
 - [Isabelle 2024](isabelle/2024): introducing and eliminating NAND gates; conversions between numbers and lists of digits; verifying SAT solvers.
 
 - [SymbiYosys 2024](yosys/2024): verifying a multiplier.
+
+- [Isabelle 2025](isabelle/2025): estimating computational complexity of `opt-NOT` and `factorise`; proving that even-length palindromes are divisible by 11; reducing SAT queries to 3SAT form.
