@@ -12,7 +12,7 @@ This is the homepage of the above-named module, which is offered to MSc and 4th-
 
 * The Isabelle coursework for 2025 is now available.
 
-* The Dafny coursework for 2025 is not yet available, and is expected to be released by early November.
+* The Dafny coursework for 2025 is now available.
 
 * The SymbiYosys coursework for 2025 is not yet available.
 
@@ -49,3 +49,5 @@ Click on the links below to access the coursework questions (with model answers)
 - [SymbiYosys 2024](yosys/2024): verifying a multiplier.
 
 - [Isabelle 2025](isabelle/2025): estimating computational complexity of `opt-NOT` and `factorise`; proving that even-length palindromes are divisible by 11; reducing SAT queries to 3SAT form.
+
+- [Dafny 2025](dafny/2025): doublesort.
