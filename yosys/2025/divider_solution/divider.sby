@@ -1,0 +1,19 @@
+[tasks]
+prove
+cover
+
+[options]
+prove: mode prove
+prove: depth 7
+cover: mode cover
+cover: depth 8
+
+[engines]
+smtbmc
+
+[script]
+read -formal divider.sv
+prep -top divider
+
+[files]
+divider.sv
