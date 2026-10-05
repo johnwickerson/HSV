@@ -1,35 +1,30 @@
 theory HSV_lecture1 imports Complex_Main begin
 
-find_theorems "_ \<in> \<rat>" 
+(* Monday 5th October 2026 *)
+
+find_theorems "_ \<in> \<rat>"
+
 thm Rats_abs_nat_div_natE
 
 theorem sqrt2_irrational: "sqrt 2 \<notin> \<rat>"
-proof 
+proof
   assume "sqrt 2 \<in> \<rat>"
-  then obtain m n
-    where "\<bar>sqrt 2\<bar> = real m / real n" and coprimemn: "coprime m n" and john: "n \<noteq> 0"
-    by (rule Rats_abs_nat_div_natE)
-  hence "2 = (real m / real n)^2"
-    by (metis abs_of_nat of_nat_numeral real_sqrt_abs real_sqrt_power)
-  hence "2 = (real m)^2 / (real n)^2"
-    by (simp add: power_divide)
-  hence "2 * (real n)^2 = (real m)^2"
-    by (simp add: john eq_divide_eq_numeral(1))
-  hence "2 * n^2 = m^2" 
-    by (metis (mono_tags, lifting) of_nat_mult 
-      of_nat_numeral of_nat_power_eq_of_nat_cancel_iff)
-  hence "even (m^2)"
-    by presburger 
-  hence meven: "even m"
-    by simp
-  then obtain m' where "m = 2 * m'" by blast
-  hence "2 * n^2 = (2 * m')^2"
-    by (simp add: \<open>2 * n\<^sup>2 = m\<^sup>2\<close>)
-  hence "2 * n^2 = 4 * m'^2" by simp
-  from this have "n^2 = 2 * m'^2" by simp
-  hence "even (n^2)" by auto
-  hence neven: "even n" by simp
-  from neven and meven and coprimemn show False by auto
+  then obtain m n where "\<bar>sqrt 2\<bar> = real m / real n" and thm1: "coprime m n" and "n \<noteq> 0" 
+    using Rats_abs_nat_div_natE by metis
+
+  hence eq1: "2 * n^2 = m^2"
+    by (smt (verit, ccfv_threshold) divide_eq_eq_numeral(1) numeral_Bit0_eq_double numeral_One of_nat_1
+        of_nat_eq_iff of_nat_mult of_nat_numeral power2_eq_square power_divide real_sqrt_abs
+        real_sqrt_pow2)
+  hence fact1: "even m"
+    by (metis dvd_mult2 even_power gcd_nat.eq_iff)
+  then obtain m' where "m = 2*m'" by auto
+  hence "2 * n^2 = (2 * m')^2" using eq1 by presburger
+  hence "n^2 = 2*m'^2" by simp
+  hence "even (n^2)" by simp
+  hence "even n" by simp
+  with fact1 and thm1 show False by auto
 qed
+
 
 end
