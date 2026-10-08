@@ -6,15 +6,9 @@ This is the homepage of the above-named module, which is offered to MSc and 4th-
 
 * Worksheets are available for [Dafny](dafny), [Isabelle](isabelle), and [SymbiYosys](yosys).
 
-* All coursework is to be done in pairs. Please use [this spreadsheet from October 2025](https://imperiallondon.sharepoint.com/:x:/r/sites/elec70056-202510/Shared%20Documents/General/pairings.xlsx?d=we69152f13a3b464f9027c023502c868d&csf=1&web=1&e=opwcVl) to support this. The spreadsheet contains two sheets. The first sheet contains students who have already paired up. The second sheet contains students who are still looking for a pair. Please enter yourself initially onto the second sheet, and then once you have found a pair, please move yourselves over to the first sheet.
+* The module is assessed by a series of three practical tests in the last three Mondays of Autumn term 2026. These tests will be run on department computers, and taken individually.
 
-* All coursework is due at 15:00 on Friday 12 December 2025 (the last day of Autumn term).
-
-* The Isabelle coursework for 2025 is [now available](isabelle/2025).
-
-* The Dafny coursework for 2025 is [now available](dafny/2025).
-
-* The SymbiYosys coursework for 2025 is [now available](yosys/2025).
+* In previous years, the module was assessed by take-home coursework. All of those coursework exercises are available below, with full solutions.
 
 ## Summary of past coursework questions
 
